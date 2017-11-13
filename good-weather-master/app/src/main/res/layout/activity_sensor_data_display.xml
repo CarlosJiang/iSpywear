@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.asdtm.goodweather.SensorDataDisplay">
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="364dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:text="start"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="10dp" />
+
+    <TextView
+        android:id="@+id/txtGeneralDis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="0dp"
+        android:text="GeneralDisplay"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnStop"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtStatus"
+        app:layout_constraintVertical_bias="0.225" />
+
+    <TextView
+        android:id="@+id/txtGyroData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="GyroscopeData"
+        app:layout_constraintBottom_toTopOf="@+id/txtStatus"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtGeneralDis" />
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="359dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:text="STOP Write"
+        app:layout_constraintTop_toBottomOf="@+id/btnStart"
+        tools:layout_editor_absoluteX="13dp"
+        android:layout_marginBottom="265dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtStatus" />
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="129dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="58dp"
+        android:text="Status"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gyroStatus"
+        app:layout_constraintVertical_bias="0.12" />
+</android.support.constraint.ConstraintLayout>

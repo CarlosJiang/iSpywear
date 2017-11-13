@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/jianghe/Desktop/Mobile/iSpyWear2/MicrosoftBand/App/app/libs/microsoft-band-1.3.20307.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f14888994429a404549c37653bc6e4c6a8c39a8e">
+        <dex dex="/Users/jianghe/Desktop/Mobile/iSpyWear2/MicrosoftBand/App/app/build/intermediates/transforms/dex/debug/folders/1000/2/microsoft-band-1.3.20307.2_aa60af8a9e68c88c9d3b4fdd68eb4ff55cb536dc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jianghe/Desktop/Mobile/iSpyWear2/MicrosoftBand/App/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/jianghe/Desktop/Mobile/iSpyWear2/MicrosoftBand/App/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_d310fb01fab80c01398e0e0c0a2b751ed1f90be5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jianghe/Desktop/Mobile/iSpyWear2/MicrosoftBand/App/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c540e082abd64fe70e943a0a7557e11940ab9906">
+        <dex dex="/Users/jianghe/Desktop/Mobile/iSpyWear2/MicrosoftBand/App/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_bf58ccfbffcf4314a43518a324be22d3039f1983/classes.dex" />
+    </item>
+
+</items>
