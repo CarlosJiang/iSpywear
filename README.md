@@ -1,20 +1,3 @@
 # iSpyWear2
 
-A Research Project to find if side channels on smartphones like Motion Sensors (Accelerometer, Gyroscope etc.,) can reveal tap events such as a smartphone user typing his/her PIN.
-
-The Project involves two parts,
-1. Uses an Android Application for accelerometer data collection.
-2. The collected data is used to train an algorithm using Machine Learning tools such as scikit and numPy.
-
-References:
-
-[1.] Zhi Xu, Kun Bai, and Sencun Zhu. 2012. TapLogger: inferring user inputs on smartphone touchscreens using on-board motion sensors. In Proceedings of the fifth ACM conference on Security and Privacy in Wireless and Mobile Networks (WISEC '12). ACM, New York, NY, USA, 113-124. DOI=http://dx.doi.org/10.1145/2185448.2185465
-
-[2.] Liang Cai and Hao Chen. 2011. TouchLogger: inferring keystrokes on touch screen from smartphone motion. In Proceedings of the 6th USENIX conference on Hot topics in security (HotSec'11). USENIX Association, Berkeley, CA, USA, 9-9. 
-
-[3.] Adam J. Aviv, Benjamin Sapp, Matt Blaze, and Jonathan M. Smith. 2012. Practicality of accelerometer side channels on smartphones. In Proceedings of the 28th Annual Computer Security Applications Conference (ACSAC '12). ACM, New York, NY, USA, 41-50. DOI=http://dx.doi.org/10.1145/2420950.2420957
-
-[4.] Spreitzer, Raphael; 	PIN Skimming: Exploiting the Ambient-Light Sensor in Mobile Devices	Security and Privacy in Smartphones & Mobile Devices (SPSM@CCS)	51-62	2014	ACM.
-
-[5.] Emmanuel Owusu, Jun Han, Sauvik Das, Adrian Perrig, and Joy Zhang. 2012. ACCessory: password inference using accelerometers on smartphones. In Proceedings of the Twelfth Workshop on Mobile Computing Systems & Applications (HotMobile '12). ACM, New York, NY, USA, Article 9, 6 pages. DOI: https://doi.org/10.1145/2162081.2162095
-
+This project examines the attack scenario where a spyware in the Android Phone accessing the sensor data on a Microsoft band to infer a PIN inputs on an ATM PIN pad. The attack assumes a user is wearing a Microsoft band on the right-hand wrist and paired with an Android Phone, and the official Microsoft Band App was installed on the Android Phone. Microsoft band users are required to install the official App. Otherwise, they can not save the data of band or read the detail sensor information that Microsoft band was designed.  Afterwards, if the spyware(Good Weather) was installed on the Android Phone, the App could spy on the PIN input process, where PINs are entered via ATM PIN pad. The spyware will collect the sensor data on the Microsoft band and stored in the “Download” folder in the external storage of the Phone. When the spying process is finished, the sensor data will be sent to attacker’s email in the background without noticing the Phone user. The attacker can use Machine Learning algorithm and Neural Network to train few robust models in the attacker’s laptop, the collected sensor data will be used as an input to the model, the output will be the predictions of the victim’s ATM PIN inputs motion vector. Therefore, the ATM PIN can be inferred by using the combination of the motion vectors.
